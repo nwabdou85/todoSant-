@@ -3,7 +3,6 @@ import { Meteor } from 'meteor/meteor';
  import {Navigation} from './navigations.jsx'
 
 
-// export const One = () => <h3> hola my name is one </h3>;
 
 
 export default class One extends Component {
@@ -14,8 +13,7 @@ export default class One extends Component {
     return (
       
       <h3> 
-       <Navigation />
-      it s me number one</h3>
+      c etait un petit exemple des applications qu on peut faire et destinés aux patients traquant l evolution de  leurs habitudes liés à la santé au file de temps</h3>
     );
   }
 }

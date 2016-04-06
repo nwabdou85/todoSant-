@@ -69,22 +69,6 @@ h2::after {
   font-weight: normal;
 }
 
-/*.done {
-  order: 1;
-}
-
-.done::after {
-  content: ' (' counter(done-items) ')';
-}
-
-.undone {
-  order: 3;
-}
-
-.undone::after {
-  content: ' (' counter(undone-items) ')';
-}*/
-
 /* hide inputs offscreen, but at the same vertical positions as the correpsonding labels, so that tabbing scrolls the viewport as expected */
 input {
   display: inline-block;
@@ -110,15 +94,7 @@ li {
   cursor: pointer;
   animation: undone .5s;
 }
-/*
-input::before {
-  content: '\f10c';  circle outline 
-  display: block;
-  position: absolute;
-  top: 11px;
-  left: 10px;
-  font: 1.5em 'FontAwesome';
-}*/
+
 
 li:hover, input:focus + li {
   background-color: rgba(255, 255, 255, .2);

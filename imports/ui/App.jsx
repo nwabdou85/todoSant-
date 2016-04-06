@@ -9,7 +9,7 @@ import check from './checked.jsx';
  import {Navigation} from './navigations.jsx'
 
 // App component - represents the whole app
-class App extends Component {
+export default class App extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
@@ -18,7 +18,7 @@ class App extends Component {
     const text = ReactDOM.findDOMNode(this.refs.textInput).value.trim();
 
       if (this.props.completCounts < 10) {
-
+           // chaque jour dix taches au max
           Meteor.call('tasks.insert', text);
       }else{
 
@@ -52,9 +52,8 @@ class App extends Component {
 
      
       <div className="container">
-         <Navigation />
         <header>
-          <h1>Today s importants things</h1>
+          <h1>Today s Todo health </h1>
 
            <form className="new-task" onSubmit={this.handleSubmit.bind(this)} >
             <input

@@ -3,7 +3,6 @@ import React, { Component} from 'react';
  import {Navigation} from './navigations.jsx'
 
 
-// export const Two  = () => <h3> hola my name is two </h3>;
 
 
 // Task component - represents a single todo item
@@ -14,8 +13,7 @@ export default class Two extends Component {
 
     return (
       <h3> 
-      <Navigation />
-      it s me number tow</h3>
+      Ici, on dessine le graphe de l évolution des taches lié au santé de patient au file de temps  </h3>
     );
   }
 }
