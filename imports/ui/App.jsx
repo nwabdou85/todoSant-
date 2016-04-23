@@ -10,7 +10,6 @@ import check from './checked.jsx';
 
 // App component - represents the whole app
 export default class App extends Component {
-
   handleSubmit(event) {
     event.preventDefault();
  

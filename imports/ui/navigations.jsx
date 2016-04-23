@@ -4,6 +4,7 @@ import { Meteor } from 'meteor/meteor';
 
 
 
+
 export default class Navigation extends Component {
 
   render() {
@@ -11,17 +12,18 @@ export default class Navigation extends Component {
 
     return (
 
-	<div>
+	<div> 
 	    <ul
          style={{textAlign:'center'}}
 	    >
 	      <li id="li"><IndexLink to="/" activeClassName="active"> Home </IndexLink></li>
 	      <li id="li"><Link to="/two" activeClassName="active"> Graphe </Link></li>
 	      <li id="li"><Link to="/one" activeClassName="active">About us</Link></li>
-
+	     <li id="li"><Link to="/login" activeClassName="active">LognIn/out</Link></li>
 	     </ul>
       {this.props.children}
      </div>
+
       
     );
   }

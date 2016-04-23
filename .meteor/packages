@@ -23,3 +23,5 @@ react-meteor-data
 meteorhacks:npm
 
 
+accounts-ui
+accounts-password
